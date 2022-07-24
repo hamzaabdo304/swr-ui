@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.transform2d.js"></script>
+</head>
+<body>
+    
+<script>
+/*
+click
+dblclick
+mousedown
+mouseenter
+mouseleave
+mousemove
+mouseout
+mouseover
+mouseup
+toggle
+ 
+mouseover vs mouseenter
+ mouseover will run when any over of the element
+ mouseenter will run once mouse enter the element for one time listening 
+ 
+mouseup vs mousedown
+mouseup when you relase the mouse after click
+mousedown when you clickby the mouse
+
+
+functions
+removeClass
+hide
+show
+toggle
+fadeIn
+fadeOut
+fadeTo
+fadeToggle
+slideDown
+slideToggle
+slideUp
+.eq
+.filter
+.first
+.has
+.is
+.last
+.map
+.not 
+.slice
+
+sildeToggle   fadeToggle  toggle
+
+$( "img" ).removeClass( "myClass yourClass" )
+
+
+$( "img" ).removeClass( "myClass noClass" ).addClass( "yourClass" );
+
+
+
+
+*/
+
+
+</script>
+
+<div class="move"> click div</div>
+<img id="img" src="img/albert.jpg" width="50" height="50" alt="">
+
+<script>
+    $(document).ready(function(){
+
+        $(".move").click(function(){
+          $(this).css({'width':'300px',backgroundColor:'red'})
+           
+        })
+
+        $("#img").click(function(){
+            $(this).slideToggle("swing")
+          //  $(this).animate({transform:'rotate(360deg)'})
+        })
+
+
+
+/**/
+    $(".img").on("click",show_me);
+        function show_me(){
+          alert("hello from my first jq");
+        }
+    });
+
+    /**/
+    $(".img").on("click",function(){
+        alert("hello from my first jq");
+    });
+    /**/  
+   
+   /**/
+    $(".img").click(function(){
+
+    })
+    /**/
+    
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

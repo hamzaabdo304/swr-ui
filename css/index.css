@@ -1,0 +1,629 @@
+body{
+    width:100%;
+    height: 100%;
+    margin: 0px;
+}
+
+
+.couter_part{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+.couter_part .part{
+    position: relative;
+    width: 7%;
+    height: 100px;
+    float: left;
+    margin: 60px;
+}
+.couter_part .part img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 2px;
+    
+}
+.couter_part .part .count{
+    width: 80%;
+    height:50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(122, 120, 120);
+    z-index: +2;
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+.couter_part .part span{
+    position: absolute;
+    top:5px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(122, 120, 120);
+    z-index: +3;
+}
+.weather{
+    width:450px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    z-index: +4;
+}
+
+
+
+.parent_login{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: +6;
+    position: fixed;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    background-color: rgba(19, 18, 18, 0.613);
+}
+.login{
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    z-index: +7;
+    position: fixed;
+    background-color: white;
+    width:30%;
+    height: auto;
+    margin:0px auto;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    text-align: center;
+}
+.login #close{
+    width: 30px;
+    float: right;
+    background-color: red;
+    color:wheat;
+    border:1px solid #ddd;
+}
+.login #close:hover{
+    cursor: pointer;
+}
+.login h1{
+    opacity: .8;
+}
+.login input{
+    width:90%;
+    height:30px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    margin-bottom: 10px;
+
+}
+.login button{
+    width:80px;
+    height:30px;
+    background-color: darkblue;
+    color: white;
+    border: 1px solid darkblue;
+    border-radius: 7px;
+
+}
+.login button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: darkblue;
+}
+
+
+
+
+/* main ==========*/
+.main{
+    position: relative;
+    width:100%;
+    height:550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main video{
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width:100%; 
+    z-index: -1;
+}
+.main .search{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width:100%;
+    height:100px;
+    z-index: +2;
+    
+}
+.main .search .part{
+  width:80%;
+  height:80%;
+  float: right;
+  text-align: right;
+
+    
+}
+.main .search .part input{
+    width:20%;
+    height:30px;
+    border:2px solid forestgreen;
+    border-radius: 7px 13px 13px 13px;
+    margin-top:1%;
+    margin-right: 1%;
+    padding-left: 15px;
+}
+.main .search .part input:focus{
+    outline: none;
+}
+.main .search .part #btn{
+    width:70px;
+    height:30px;
+    border:1px solid #ddd;
+    border-radius: 7px 13px 13px 13px;
+    margin-top:1%;
+    margin-left: 1%;
+}
+.main .search .part #btn:hover{
+    color: forestgreen;
+    cursor: pointer;
+}
+.main .search .part .result{
+    display: none;
+    width:70%;
+    height:40%;
+    border:1px solid #ddd;
+    border-radius: 7px 13px 13px 13px;
+    margin-top:1%;
+    margin-left: 3%;
+}
+.parent_over{
+    width:100%;
+    height:200px;
+    position: absolute;
+    top:470px;
+    left: 0;
+    z-index: +3;
+}
+.parent_over .over{
+    
+    width:40%;
+    height:100%;
+    margin: 0px auto;
+    text-align: center;
+}
+.parent_over .over button{
+    width:150px;
+    height:40px;
+    border-radius: 7px;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bold;
+    border:3px solid white;
+}
+.parent_over .over button:hover{
+    background-color: rgb(115, 146, 115);
+    cursor: pointer;
+}
+.parent_over .over p{
+    background-color: rgba(180, 176, 176, 0.7);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(238, 238, 229);
+}
+.parent_over .over p span{
+    font-size: 35px;
+    color: forestgreen;
+   
+}
+.space{
+    width:100%;
+    height: 30px;
+}
+/* main ==========*/
+
+/* about us  =============*/
+.about-us{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+.about-us .head{
+    width:100%;
+    height: 60px;
+    text-align: center;
+}
+.about-us .head h2{
+    opacity: .8;
+}
+.about-us .head .line{
+    width:60px;
+    height: 2px;
+    margin: 0px auto;
+    background-color: #ddd;
+    margin-top: -5px;
+}
+/**/
+.about-us .photo{
+    float: left;
+    width:30%;
+    height: 320px;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.about-us .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+/**/
+.about-us .info{
+    float: left;
+    width:45%;
+    height: 320px;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.about-us .info q{
+    width: 95%;
+    font-size: 23px;
+    opacity: .8;
+}
+
+/* about us  =============*/
+
+.category{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  
+}
+.category .head{
+    width:100%;
+    height: 60px;
+    text-align: center;
+}
+.category .head h2{
+    opacity: .8;
+}
+.category .head .line{
+    width:60px;
+    height: 2px;
+    margin: 0px auto;
+    background-color: #ddd;
+    margin-top: -5px;
+}
+
+.category .center{
+    width:80%;
+    height: auto;
+    overflow: hidden;
+    margin:0px auto;
+    
+}
+.category .center .part{
+    position: relative;
+    width:20%;
+    height: 170px;
+    overflow: hidden;
+    margin:1%;
+    float: left;
+}
+.category .center .part img{
+    width: 100%;
+    height: 100%;
+}
+.category .center .part #price-over{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    z-index: +1;
+    color: forestgreen;
+    background-color: white;
+    border-radius: 10px;
+}
+.category .center .part #name-over{}
+
+/* download our app*/
+.app{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.app .head{
+    width:100%;
+    height: 60px;
+    text-align: center;
+}
+.app .head h2{
+    opacity: .8;
+}
+.app .head .line{
+    width:60px;
+    height: 2px;
+    margin: 0px auto;
+    background-color: #ddd;
+    margin-top: -5px;
+}
+
+
+
+
+.app .photo{
+    float: left;
+    width: 20%;
+    height: 420px;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.app .photo img{
+    width:100%;
+    height: 100%;
+    border-radius: 5px 10px 10px 10px;
+    border:3px solid  #ddd;
+}
+
+.app .info{
+    float: left;
+    width: 60%;
+    height: 420px;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.app .info h2{
+    opacity: .8;
+}
+.app .info p{
+    width: 90%;
+    height: 50%;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 17px;
+    opacity: .7;
+}
+.app .info img{
+    width: 30%;
+    height: 80px;
+    margin-left: 4%;
+}
+/* download our app*/
+
+.inc{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+.inc .head{
+    width:100%;
+    height: 60px;
+    text-align: center;
+}
+.inc .head h2{
+    opacity: .8;
+}
+.inc .head .line{
+    width:60px;
+    height: 2px;
+    margin: 0px auto;
+    background-color: #ddd;
+    margin-top: -5px;
+}
+.inc img{
+    width:80px;
+    height: 80px;
+    margin-left: 1%;
+}
+
+
+/* contact*/
+.contact{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.contact .head{
+    width:100%;
+    height: 60px;
+    text-align: center;
+}
+.contact .head h2{
+    opacity: .8;
+}
+.contact .head .line{
+    width:60px;
+    height: 2px;
+    margin: 0px auto;
+    background-color: #ddd;
+    margin-top: -5px;
+}
+.contact #qr{
+    position: absolute;
+    top:30px;
+    right: 5px;
+    width:200px;
+    height:170px;
+    z-index: +2;
+}
+
+.contact .map{
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 4%;
+    float: left;
+}
+.contact .map img{
+    width:98%;
+    height: 80%;
+    border-radius:7px 10px 10px 10px;
+    border:3px solid #ddd;
+}
+
+.contact .info{
+   
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 4%;
+    float: left;
+}
+.contact .info input{
+    width:90%;
+    height: 30px;
+    border:2px solid rgb(136, 136, 136);
+    border-radius: 3px 6px 6px 6px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.contact .info input:focus{
+    outline: none;
+}
+.contact .info textarea{
+    width:90%;
+    height: 150px;
+    border:2px solid rgb(136, 136, 136);
+    border-radius: 3px 6px 6px 6px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.contact .info textarea:focus{
+    outline: none;
+}
+.contact .info button{
+    width:100px;
+    height: 35px;
+    background-color: darkblue;
+    color: white;
+    border:2px solid rgb(136, 136, 136);
+    border-radius: 3px 6px 6px 6px;
+    margin-bottom: 10px;
+    font-size:15px;
+}
+.contact .info button:hover{
+    background-color: rgb(53, 53, 151);
+    cursor: pointer;
+}
+
+
+
+/* contact*/
+
+.site_map{
+    width:100%;
+    height:300px;
+    background-color: rgb(31, 30, 30);
+}
+.site_map .head{
+    width:100%;
+    height:20%;
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+}
+.site_map .head #logo{
+    float: left;
+    width:50px;
+    height: 50px;
+}
+.site_map .head .news{
+    float: left;
+    margin-left: 10%;
+    margin-top: 5px;
+    width:50%;
+    height:80%;
+    overflow: hidden;
+    background-color: rgb(20, 20, 20);
+    padding: 5px;
+
+}
+.site_map .head .news p{
+    float: left;
+    margin-right: 5px;
+    color: white;
+    font-size: 18px;
+    margin-top: -2px;
+}
+.site_map .head .news input{
+    width:60%;
+    height: 30px;
+    border:1px solid forestgreen;
+    border-radius: 7px;
+}
+.site_map .head .news button{
+    width:80px;
+    height: 35px;
+    background-color: forestgreen;
+    border:1px solid forestgreen;
+    border-radius: 7px;
+    color: white;
+}
+.site_map .head  #qr{
+    float: right;
+    width:50px;
+    height: 50px;
+    margin:3px;
+}
+
+
+
+
+.site_map .links{
+    float: left;
+      width:30%;
+      height:70%;
+  }
+  .site_map .links .ul{
+    
+      list-style-type: none;
+      width:100%;
+      height:100%;
+     text-align: center; 
+  }
+  .ul li{ 
+      
+      width:100%;
+      margin-bottom: 15px;
+      font-size: 18px;
+      text-decoration: none;
+      color: rgb(248, 234, 234);
+    
+  }
+  .ul a{ 
+      
+      width:100%;
+      margin-bottom: 15px;
+      font-size: 18px;
+      text-decoration: none;
+      color: rgb(248, 234, 234);
+    
+  }
+   
+  .footer{
+      width:100%;
+      height:40px;
+      text-align: center;
+      background-color: rgb(20, 20, 20);
+     padding-top: 2px;
+  }
+  .footer p{
+      color: white;
+      margin-top: 5px;
+      
+  }
+  
+  
+  
+
+
+

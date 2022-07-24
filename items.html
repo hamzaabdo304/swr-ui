@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/items.css">
+    
+    <script defer src="js/items.js"></script>
+    <script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<img src="images/loader.gif" style="margin-left: 20%;" id="loader" alt="">
+<script>
+
+setTimeout(function(){
+    document.getElementById('loader').style.display="none";
+    document.getElementById('all').style.display="block";
+},1000)
+
+
+function first(){
+    let f=document.getElementsByClassName('first');
+    f[0].style.backgroundColor="gold";
+}
+
+
+</script>
+
+<div id="all" style="display: none;">
+
+    <input type="submit" value="0" id="counter">
+    <img src="images/shop.png" id="cart" alt="">
+
+    <img src="images/menu.png" id="menu" alt="">
+    <!-- start of header part -->
+    <div class="header">
+        <img src="..." alt="">
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="items.html">Products</a> </li>
+            <li> <a href="contact.html">Contact Us</a> </li>
+            <li> <a href="login.html">Login</a> </li>
+            <li> <a href="signup.html">Signup</a> </li>
+            <li> <a href="help.html">Help</a> </li>
+        </ul>
+    </div>
+    <!-- end of header part -->
+<div class="ads"></div>
+    <!-- search -->
+    <div class="search">
+        <input type="search" placeholder="search here....">
+        <button>Search</button>
+    </div>
+    <!-- search -->
+    <div class="space"></div>
+    <!-- parent items -->
+    <div class="parent_items">
+        <!-- item part -->
+        <div class="item_part">
+            <div class="unit_select">
+                <input type="submit" class="dec" onclick="dec(this)" value="-">
+                <input type="text" class="unit_value" value="1">
+                <input type="submit" class="inc" onclick="inc(this)" value="+">
+            </div>
+            <div class="cart">
+                <p>Units:5</p>
+                <p>unit price:200</p>
+                <p>total:1000</p>
+                <button>Cancel order</button>
+                <button>Continue to Payment</button>
+            </div>
+            <button class="gopayment" onclick="run_counter(this)">add to cart</button>
+            <img src="images/albert.jpg" width="200" height="200" alt="">
+            <p id="price">Price EGP.500</p>
+            <p id="name">Item name</p>
+            <p id="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi omnis nisi eveniet, sunt, consequuntur iure enim impedit distinctio facilis quia labore illum. Tempora esse obcaecati quae accusantium ut sapiente.
+            </p>
+            <a href="itemdetail.html">More</a>
+            <div class="rat">
+                <img src="images/star2.png" class="m_one" onclick="first(this)" alt="">
+                <img src="images/star2.png" class="m_two" onclick="second(this)" alt="">
+                <img src="images/star2.png" class="m_three" onclick="third(this)" alt="">
+                <img src="images/star2.png" class="m_fourth" onclick="fourth(this)" alt="">
+                <img src="images/star2.png" class="m_fifth" onclick="fifth(this)" alt="">
+            </div>
+         
+        </div>
+        <!-- end of item part -->
+
+    <!-- item part -->
+    <div class="item_part">
+        <div class="unit_select">
+            <input type="submit" class="dec" onclick="dec(this)" value="-">
+            <input type="text" class="unit_value" value="1">
+            <input type="submit" class="inc" onclick="inc(this)" value="+">
+        </div>
+        <div class="cart">
+            <p>Units:5</p>
+            <p>unit price:200</p>
+            <p>total:1000</p>
+            <button>Cancel order</button>
+            <button>Continue to Payment</button>
+        </div>
+        <button class="gopayment" onclick="run_counter(this)">add to cart</button>
+        <img src="images/albert.jpg" width="200" height="200" alt="">
+        <p id="price">Price EGP.500</p>
+        <p id="name">Item name</p>
+        <p id="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi omnis nisi eveniet, sunt, consequuntur iure enim impedit distinctio facilis quia labore illum. Tempora esse obcaecati quae accusantium ut sapiente.
+        </p>
+        <a href="itemdetail.html">More</a>
+        <div class="rat">
+            <img src="images/star2.png" class="m_one" onclick="first(this)" alt="">
+            <img src="images/star2.png" class="m_two" onclick="second(this)" alt="">
+            <img src="images/star2.png" class="m_three" onclick="third(this)" alt="">
+            <img src="images/star2.png" class="m_fourth" onclick="fourth(this)" alt="">
+            <img src="images/star2.png" class="m_fifth" onclick="fifth(this)" alt="">
+        </div>
+     
+    </div>
+    <!-- end of item part -->
+
+
+        <!-- item part -->
+        <div class="item_part">
+            <div class="unit_select">
+                <input type="submit" class="dec" onclick="dec(this)" value="-">
+                <input type="text" class="unit_value" value="1">
+                <input type="submit" class="inc" onclick="inc(this)" value="+">
+            </div>
+            <div class="cart">
+                <p>Units:5</p>
+                <p>unit price:200</p>
+                <p>total:1000</p>
+                <button>Cancel order</button>
+                <button>Continue to Payment</button>
+            </div>
+            <button class="gopayment" onclick="run_counter(this)">add to cart</button>
+            <img src="images/albert.jpg" width="200" height="200" alt="">
+            <p id="price">Price EGP.500</p>
+            <p id="name">Item name</p>
+            <p id="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi omnis nisi eveniet, sunt, consequuntur iure enim impedit distinctio facilis quia labore illum. Tempora esse obcaecati quae accusantium ut sapiente.
+            </p>
+            <a href="itemdetail.html">More</a>
+            <div class="rat">
+                <img src="images/star2.png" class="m_one" onclick="first(this)" alt="">
+                <img src="images/star2.png" class="m_two" onclick="second(this)" alt="">
+                <img src="images/star2.png" class="m_three" onclick="third(this)" alt="">
+                <img src="images/star2.png" class="m_fourth" onclick="fourth(this)" alt="">
+                <img src="images/star2.png" class="m_fifth" onclick="fifth(this)" alt="">
+            </div>
+         
+        </div>
+        <!-- end of item part -->
+
+
+            <!-- item part -->
+            <div class="item_part">
+                <div class="unit_select">
+                    <input type="submit" class="dec" onclick="dec(this)" value="-">
+                    <input type="text" class="unit_value" value="1">
+                    <input type="submit" class="inc" onclick="inc(this)" value="+">
+                </div>
+                <div class="cart">
+                    <p>Units:5</p>
+                    <p>unit price:200</p>
+                    <p>total:1000</p>
+                    <button>Cancel order</button>
+                    <button>Continue to Payment</button>
+                </div>
+                <button class="gopayment" onclick="run_counter(this)">add to cart</button>
+                <img src="images/albert.jpg" width="200" height="200" alt="">
+                <p id="price">Price EGP.500</p>
+                <p id="name">Item name</p>
+                <p id="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi omnis nisi eveniet, sunt, consequuntur iure enim impedit distinctio facilis quia labore illum. Tempora esse obcaecati quae accusantium ut sapiente.
+                </p>
+                <a href="itemdetail.html">More</a>
+                <div class="rat">
+                    <img src="images/star2.png" class="m_one" onclick="first(this)" alt="">
+                    <img src="images/star2.png" class="m_two" onclick="second(this)" alt="">
+                    <img src="images/star2.png" class="m_three" onclick="third(this)" alt="">
+                    <img src="images/star2.png" class="m_fourth" onclick="fourth(this)" alt="">
+                    <img src="images/star2.png" class="m_fifth" onclick="fifth(this)" alt="">
+                </div>
+             
+            </div>
+            <!-- end of item part -->
+    
+
+                <!-- item part -->
+        <div class="item_part">
+            <div class="unit_select">
+                <input type="submit" class="dec" onclick="dec(this)" value="-">
+                <input type="text" class="unit_value" value="1">
+                <input type="submit" class="inc" onclick="inc(this)" value="+">
+            </div>
+            <div class="cart">
+                <p>Units:5</p>
+                <p>unit price:200</p>
+                <p>total:1000</p>
+                <button>Cancel order</button>
+                <button>Continue to Payment</button>
+            </div>
+            <button class="gopayment" onclick="run_counter(this)">add to cart</button>
+            <img src="images/albert.jpg" width="200" height="200" alt="">
+            <p id="price">Price EGP.500</p>
+            <p id="name">Item name</p>
+            <p id="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi omnis nisi eveniet, sunt, consequuntur iure enim impedit distinctio facilis quia labore illum. Tempora esse obcaecati quae accusantium ut sapiente.
+            </p>
+            <a href="itemdetail.html">More</a>
+            <div class="rat">
+                <img src="images/star2.png" class="m_one" onclick="first(this)" alt="">
+                <img src="images/star2.png" class="m_two" onclick="second(this)" alt="">
+                <img src="images/star2.png" class="m_three" onclick="third(this)" alt="">
+                <img src="images/star2.png" class="m_fourth" onclick="fourth(this)" alt="">
+                <img src="images/star2.png" class="m_fifth" onclick="fifth(this)" alt="">
+            </div>
+         
+        </div>
+        <!-- end of item part -->
+
+
+
+
+
+
+    </div>
+
+    <!-- parent items -->
+
+
+
+
+</div>
+
+</body>
+
+</html>

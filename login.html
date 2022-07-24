@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script defer src="js/login.js"></script>
+    
+</head>
+<body>
+    <!-- start of header part -->
+    <img src="images/menu.png" id="menu" alt="">
+    <div class="header">
+        <img src="images/albert.jpg"  alt="">
+        <ul>
+            <li>  <a href="index.html">Home</a>  </li>
+            <li>  <a href="items.html">Products</a>  </li>
+            <li>  <a href="contact.html">Contact Us</a>  </li>
+            <li>  <a href="login.html">Login</a>  </li>
+            <li>  <a href="signup.html">Signup</a>  </li>
+            <li>  <a href="help.html">Help</a>  </li>
+        </ul>
+    </div>
+    <!-- end of header part -->
+    <div class="space"></div>
+    <!-- start of login parent -->
+    <div class="parent_login">
+    <!-- login part -->
+        <div class="login">
+            <h1>Login Please</h1>
+            <input type="email" id="email" onkeyup="valid_email()" placeholder="Your Email">
+            <p  id="err_email" style="color: red;display: none;">* email not valid --> example@example.com</p>
+            <input type="password" required placeholder="*******">
+            <button id="btn">Login</button>
+            <hr>
+            <p>
+                If You Don't have Account Please  <a href="signup.html">Signup</a>  ?
+            </p>
+            <a href="forget.html">Forget Password</a>
+       <div class="space"></div>
+        </div>
+    <!-- login part -->
+    </div>
+
+    <!-- end of login parent -->
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+body{
+    width:100%;
+    height:100%;
+    margin:0px;
+}
+
+.space{
+    width:100%;
+    height:20px;
+}
+
+/* ========= info div =======*/
+.info{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+.info .photo{
+    float: left;
+    position: relative;
+    width:30%;
+    height: 320px;
+    overflow: hidden;
+   margin-left: 1%;
+}
+.info .photo img{
+    width:100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.info .photo .over-images{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+}
+.info .photo .over-images img{
+    width:60px;
+    height: 60px;
+    margin:2px;
+    border:2px solid white;
+    border-radius: 7px;
+}
+.info .photo .over-images img:hover{
+    cursor: pointer;
+    border:2px solid forestgreen;
+}
+/*=============================*/
+.info .data{
+    width:40%;
+    height: 320px;
+    float: left;
+    margin-left: 3%;
+
+}
+.info .data h2{
+    opacity: .7;
+}
+.info .data p{
+    opacity: .8;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 4%;
+}
+.info .data button{
+    float: right;
+    color: darkblue;
+    background-color: white;
+    border:1px solid #ddd;
+    width:100px;
+    height:30px;
+    border-radius: 7px;
+}
+/*  =================*/
+.info .info-ads{
+    float: left;
+    width:20%;
+    height: 320px;
+    overflow: hidden;
+    margin-left: 3%;
+}
+
+.info .info-ads img{
+    width:100%;
+    height: 100%;
+}
+/* ========= info div =======*/
+
+.desc{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+}
+.desc h1{
+    opacity: .7;
+    margin-left: 1%;
+}
+.desc p{
+    margin-left: 4%;
+    width:85%;
+    height:auto;
+    overflow: hidden;
+    opacity: .8;
+    font-size: 18px;
+    text-align: justify;
+}
+/*========= who ========== */
+.who{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.who .image{
+    float: left;
+    width:150px;
+    height: 150px;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.who .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+.who .who_info{
+    float: left;
+    width:30%;
+    height: 150px;
+    overflow: hidden;
+    margin-left: 2%;
+
+}
+.who .who_info h3{
+    opacity: .8;
+
+}
+.who .who_info p{
+    opacity: .8;
+    width:85%;
+    height: auto;
+    text-align: justify;
+}
+
+
+/* ============ who ========*/
+#seealso{
+    margin-left: 20px;
+    opacity: .8;
+}
+
+/* =============== comments*/
+.comments{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+.comments .make_comment{
+    width:100%;
+    height:60px;
+    overflow: hidden;
+    position: relative;
+}
+.comments .make_comment textarea{
+    width:60%;
+    height:90%;
+    border:1px solid #ddd;
+    margin-left: 4%;
+    color: rgb(77, 72, 72);
+    border-radius: 7px;
+}
+.comments .make_comment button{
+    width:80px;
+    height:35px;
+    border:1px solid white;
+    background-color: darkblue;
+    color: white;
+    border-radius: 7px;
+   position: absolute;
+   left:65%;
+   top:5px;
+}
+/*==== end of make_comment */
+.comments .comment{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.comments .comment .comment_head{
+    width:100%;
+    height:70px;
+    overflow: hidden;
+    
+}
+.comments .comment .comment_head .photo{
+    float: left;
+    width:60px;
+    height:100%;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.comments .comment .comment_head .photo img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+.comments .comment .comment_head .timedate{
+    float: left;
+    width:120px;
+    height:100%;
+    margin-left: 2%;
+}
+.comments .comment .comment_head .timedate #name{
+    color: rgb(63, 58, 58);
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.comments .comment .comment_head .timedate p{
+    font-size: 12px;
+}
+
+.comments .comment .comment_body{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.comments .comment .comment_body p{
+    width:70%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 4%;
+    opacity: .8;
+    font-size: 14px;
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 7px;
+  
+}
+
+/* =============== comments*/
+
+
+
+
+
+
+/* === items === */
+.parent_items{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.parent_items .item_part{
+    position: relative;
+    width: 23%;
+    height: 400px;
+    float: left;
+    margin: 10px;
+    overflow: hidden;
+    
+}
+.parent_items .item_part button{
+    width: 80px;
+    height: 30px;
+    background-color: forestgreen;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: +2;
+}
+.parent_items .item_part button:hover{
+    background-color: rgb(93, 179, 93);
+    cursor: pointer;
+}
+
+.parent_items .item_part img{
+    width:100%;
+    height: 60%;
+    border-radius: 2px 7px 7px 7px;
+} 
+.parent_items .item_part #price{
+    float: right;
+    opacity: .7;
+}
+.parent_items .item_part #name{
+    opacity: .8;
+}
+.parent_items .item_part #desc{
+    width: 100%;
+    height: 60px;
+    opacity: .8;
+    text-align: justify;
+    overflow: hidden;
+
+}
+.parent_items .item_part a{
+    float: right;
+    width:60px;
+    height: 25px;
+    background-color: green;
+    color: white;
+    border:1px solid white;
+    border-radius:30px;
+    padding-left: 25px;
+    padding-top: 5px;
+    margin-top: -5px;
+}
+
+/* === end items === */
+@media only screen and (min-width:320px) and (max-width:420px){
+    .info .photo{
+        width:95%;
+    }
+    .info .data{
+        width:95%;
+    }
+    .info .info-ads{
+        width:95%;
+    }
+    /*========*/
+    .who .image{
+        width:95%;
+        margin-left: 1%;
+    }
+    .who .who_info{
+        width:95%;
+    }
+
+    .parent_items .item_part{
+        width:90%;
+    }
+
+}
+
+
+@media only screen and (min-width:421px) and (max-width:570px){
+    .info .photo{
+        width:95%;
+    }
+    .info .data{
+        width:95%;
+    }
+    .info .info-ads{
+        width:95%;
+    }
+    /*========*/
+    .who .image{
+        width:65%;
+        
+    }
+    .who .who_info{
+        width:95%;
+    }
+
+    .parent_items .item_part{
+        width:90%;
+    }
+
+}
+
+
+
+@media only screen and (min-width:571px) and (max-width:650px){
+    .info .photo{
+        width:95%;
+    }
+    .info .data{
+        width:95%;
+    }
+    .info .info-ads{
+        width:95%;
+    }
+    /*========*/
+    .who .image{
+        width:65%;
+        height:200px;
+        
+    }
+    .who .who_info{
+        width:95%;
+    }
+
+    .parent_items .item_part{
+        width:45%;
+    }
+
+}
+
+
+
+@media only screen and (min-width:651px) and (max-width:850px){
+    .info .photo{
+        width:35%;
+    }
+    .info .data{
+        width:50%;
+    }
+    .info .info-ads{
+        width:70%;
+        height:200px; 
+    }
+    /*========*/
+    .who .image{
+        width:65%;
+        height:200px;
+        
+    }
+    .who .who_info{
+        width:95%;
+    }
+
+    .parent_items .item_part{
+        width:30%;
+    }
+
+}
+
+
+
+@media only screen and (min-width:851px) and (max-width:1100px){
+    .parent_items .item_part{
+        width:22%;
+    }
+}

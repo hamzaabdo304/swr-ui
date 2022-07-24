@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    /*
+    what is keyframes ?
+    @keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation
+*/
+.part {
+  width: 100px;
+  height: 60px;
+  background-color: darkblue;
+  animation-name: header;
+  animation-duration: 2s;
+}
+@keyframes header {
+  from {background-color: darkblue;left: 30px;top:50px;position: absolute;}
+  to {background-color: black;}
+  }
+  /*
+  from {background-color: darkblue;}
+  to {background-color: black;}
+  or 
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+ -- you can add position with every frame like this
+   {background-color: yellow;top:100px;right:0;}
+   and spacify the   position: relative;
+
+-- you can loop it with
+ iteration-count:loop number or infinite; 
+ animation-iteration-count: 2;
+
+direction normal ,reverse ,alternate ,alternate-reverse
+  
+animation-direction: reverse; 
+//
+speed
+animation-timing-function
+linear, ease, ease-in, ease-out, ease-in-out
+//
+animation-fill-mode
+show every frame from to two colors
+ forwards;backwards;both;alternate;
+  */
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+
+  <div class="part">
+
+  </div>
+
+</body>
+</html>

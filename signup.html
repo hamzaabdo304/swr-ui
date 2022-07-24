@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+    <script defer src="js/signup.js"></script>
+</head>
+<body>
+      <!--  header part   -->
+      <div class="header">
+        <img src="images/img1.jpg" id="logo" alt="logo">
+        <ul>
+            <li>  <a href="index.html">Home</a>  </li>
+            <li>  <a href="items.html">Items</a>  </li>
+            <li>  <a href="#">Contact Us</a>  </li>
+            <li>  <a href="login.html">Login</a>  </li>
+            <li>  <a href="signup.html">Signup</a>  </li>
+
+        </ul>
+
+
+    </div>
+    <!-- end of header part   -->
+<div class="space"></div>
+
+<!-- signup parent  -->
+<div class="signup_parent">
+    <div class="photo">
+        <img src="images/placeholder.png" id="image" onclick="showfile()" alt="profile pic">
+        <input type="file" style="display: none;" onchange="readimage(event)" id="file">
+    </div>
+    <div class="data">
+        <h1>Signup Please...</h1>
+       <div class="p1">
+        <input type="text" id="first" onkeyup="valid_first()" placeholder="First Name">
+        <input type="text" id="last" onkeyup="valid_last()" placeholder="Last Name">
+        <p id="err_first" class="e">* First name must contain at least 3 characters</p>
+        <p id="err_last" class="e">* Last name must contain at least 3 characters</p>
+      </div>
+      <div class="p1">
+        <input type="tel" id="phone" onkeyup="valid_phone()" placeholder="Mobile number">
+        <input type="email" id="email" onkeyup="valid_email()" placeholder="E-mail">
+        <p  id="err_phone" class="e">* phone number must contain 11 digits</p>
+        <p  id="err_email" class="e">* email not valid --> example@example.com</p>
+    </div>
+    <div class="p1">
+        <input type="password" id="pass" onkeyup="valid_pass()" placeholder="Password">
+        <input type="password" id="confirm" onkeyup="valid_confirm()" placeholder="Confirm Password">
+        <p id="err_pass" class="e">* Password must contain at least one (Digit,upper,lower characters, semple) and be 8-16 characters
+        </p>
+        <p id="err_confirm" class="e">* password does not match</p>
+    </div>
+        <hr>
+        <button id="btn">Signup</button>
+        <p>if you have account please <a href="login.html">Login</a></p>
+    </div>
+</div>
+<!-- end of signup parent  -->
+
+
+
+
+<div class="footer">
+    <p> &copy; Can inc.2021 </p>
+    <div class="links">
+        <img src="" alt="fb">
+        <img src="" alt="tw">
+        <img src="" alt="li">
+    </div>
+</div>
+ 
+
+
+</body>
+</html>

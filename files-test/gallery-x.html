@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.parent{
+    width:400px;
+    height:170px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+ul{
+min-width: 1000px;
+list-style-type: none;
+}
+
+li{
+    float: left;
+}
+li img{
+    width:100px;
+    height:100px;
+    margin-left: 10px;
+}
+    </style>
+</head>
+<body>
+    
+
+    <div class="parent" id="p">
+
+        <ul>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            <li>
+                <img src="images/albert.jpg" alt="">
+                <p>price 500.EGP</p>
+            </li>
+            
+        </ul>
+
+    </div>
+
+<button onclick="next()">Next</button>
+<button onclick="prev()">prev</button>
+    <script>
+
+let index=1;
+let prev_index=1;
+function next(){
+    index+=100;
+    if(index >=800){
+        index=1
+    }
+    console.log(index)
+let parent=document.getElementById('p');
+parent.scroll({left:index,behavior:'smooth'})
+}
+function prev(){
+    index-=100;
+if(index <1){
+    index=1;
+}
+    console.log(index)
+    let parent=document.getElementById('p');
+    parent.scroll({left:index,behavior:'smooth'})
+}
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+ }
+ .signup_parent{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    
+ }
+ .signup_parent .photo{
+     width: 20%;
+     height: 200px;
+     margin-left: 10px;
+     margin-top: 10px;
+     float: right;
+ }
+ .signup_parent .photo img{
+    width:200px;height:200px;
+
+ }
+ .signup_parent .photo img:hover{
+     cursor: pointer;
+ }
+#profile_pic{
+     width: 200px;
+     height: 200px;
+     border: 1px solid #ddd;
+     border-radius: 7px;
+     margin-top: 10px;
+ }
+  .signup_parent .photo input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor:pointer;
+    background-color: white;
+    color: white;
+ }
+ .signup_parent .data h1{
+    opacity: .7;
+ }
+ .signup_parent .data {
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+    margin-left:10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    text-align: center;
+ }
+ .signup_parent .data .p1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left:10px;
+    margin-top: 10px;
+ }
+ .signup_parent .data .p1 .e{
+
+    display: none;
+    width:50%;
+    float: left;
+    color:red;
+ }
+ .signup_parent .data .p1 input{
+    width: 45%;
+    height: 35px;
+    margin-bottom: 10px;
+    border:1px solid #ddd;
+    border-radius: 7px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, .7);
+ }
+.signup_parent .data button{
+    width: 75%;
+    height: 35px;
+    background-color: darkblue;
+    color: white;
+    border: 1px solid darkblue;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.signup_parent .data button:hover{
+    background-color: rgb(20, 43, 93);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.space{
+    width: 100%;
+    height: 20px;
+}

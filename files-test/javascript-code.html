@@ -1,0 +1,633 @@
+<html>
+<head></head>
+<body>
+ 
+<script>
+// get data from user with prompt 
+// alert show data only  
+let age = prompt("What is your age?", 26);
+
+
+let user = 'joseph', age = 27,message = 'hello from first example';
+  
+alert(user+'\n'+age+'\n'+message);
+
+let a,b,c=5
+let a=5
+let b=5
+let c=5
+/*var vs let 
+var work as global variable 
+*/
+
+/*  variable name  */
+let 2a; // not true to use 
+
+let my-name; // not true to use 
+
+// can't be override again like php const
+const pageload = '5';
+
+//
+/*
+jkgkjg,gkbj
+jhfhjvjhk
+*/
+pageload = '6'; 
+// 
+let name = "joseph";
+// embed a variable like php and python
+alert( `Hello, ${name}!` ); 
+
+// boolean in js
+let checked = true; 
+let checked = false; 
+
+
+// logic
+let v = 4 > 1;
+alert( v );  // true
+
+let age = null; // not defined yet  like let age;
+let age;
+
+let r;
+let n=null;
+alert(r)
+alert(n)
+
+// convert
+let str = '123';
+alert(typeof str); // string
+
+let num = Number(str); // becomes a number 
+
+alert(typeof num); // number
+
+alert( "6" / "2" );  
+alert(5+3); //8
+alert('6'+'3') // 63
+alert('6'*'3') // 18
+alert('6'-'3') // 3
+alert( Number("123") ); // 123
+alert( Number("123z") );      // error 
+alert( 1 + '2' ); // '12' (string to the right)
+alert( '1' + 2 ); // '12' (string to the left)
+alert(2 + 2 + '1' ); // "41" and not "221"
+
+alert( Boolean("0") ); // true
+alert( Boolean(" ") ); //  also true 
+
+// like python  way 
+let a, b, c;
+
+a = b = c = 2 +'2';
+
+alert( a ); // 22
+alert( b ); // 22
+alert( c ); // 22
+
+// pow
+alert( 2 ** 2 ); // 4  (2 * 2)
+alert( 2 **  3 ); // 8  (2 * 2 * 2)
+alert( 2 ** 4 ); // 16 (2 * 2 * 2 * 2)
+
+// like any language 
+let counter = 2;
+counter++;        // counter+1;
+alert( counter ); // 3
+
+let counter = 0;
+counter++;
+++counter;
+alert( counter ); // 2, the same
+//
+
+let counter = 1;
+alert( 2 * ++counter ); 
+
+//
+
+let n = 2;
+alert(n)
+n += 5; // now n = 7
+alert(n)
+n=5 
+alert(n)
+n *= 2; // now n = 14 
+alert( n ); // 14
+
+??????????????????
+//comma used here for dividing them
+let a = (1 + 2, 3 + 4);
+let a=3;
+a=3+4;
+alert(a)// 7 // second
+ 
+// if alert 
+alert( 1 + 2, 3 + 4 ); //3 first
+?????????????????????????????
+
+// comparison
+alert( 2 > 1 );  // true (correct)
+alert( 2 == 1 ); // false (wrong)
+alert( 2 != 1 ); // true (correct)
+
+alert( '2' > 1 ); // true
+alert( '01' == 1 ); // true
+
+// loops
+// while 
+let i = 0;
+while (i < 3) { // shows 0, then 1, then 2
+  alert( i );
+  i++;
+}
+// do 
+let i = 1;
+do {
+  alert( i );
+  i++;
+} while (i < 4);
+
+
+// for loop
+for (begin; condition; step) {
+  // ... loop body ...
+}
+
+for (let i = 0; i < 10; i++) { 
+  alert(i);
+}
+
+let i = 0; // outside the for body 
+
+for (i = 0; i < 3; i++) { 
+  alert(i); 
+}
+
+alert(i);
+
+
+//////////
+let i = 0; 
+
+for (; i < 3; i++) { 
+  alert( i ); 
+}
+////////////////
+
+for (let i = 0; i < 10; i++) {
+
+if (i % 2 == 0) continue;
+
+alert(i); // 1, then 3, 5, 7, 9
+
+}
+  
+if(){
+
+}else{
+
+}
+
+switch(x) {
+  case 'value1':  // if (x === 'value1')
+    ...
+    [break]
+
+  case 'value2':  // if (x === 'value2')
+    ...
+    [break]
+
+  default:
+    ...
+    [break]
+}
+
+
+
+
+let a = 80;
+switch (a) {
+  case 95:
+    
+    alert( 'A+' );
+    break;
+  case 80:
+    alert( 'B+' );
+    break;
+  case 50:
+    alert( 'c' );
+    break;
+
+}
+// function 
+
+// event  click or 
+function showMessage() {
+  alert( 'Hello' );
+
+}
+showMessage();
+
+let n=()=>{
+    alert( 'Hello from n' );
+  }
+
+n();
+
+//
+let userName = 'Joseph';
+
+function showMessage() {
+  let message = 'Hello ' + userName;
+  alert(message);
+}
+
+showMessage();
+
+
+// get and set methods
+
+// ddefault value 
+function showMessage(name, salary =5000) {
+  alert( name + ": " + salary );
+}
+
+showMessage("alex"); // Ann: 5000
+//
+
+function pow(a, b) {
+  return a ** b;
+}
+
+let result = pow(5, 5);
+alert( result ); // 6
+
+////////////////////////////////////
+
+let user = {
+  // ...
+};
+************************************************
+////////////////////////////
+// array
+let data=["joseph",5000,"giza"];
+alert(data[1]);
+
+
+// dictionary
+let data2={name:"joseph",
+hello:function(name){
+  alert("hello again :"+this.name)
+},
+
+};
+data2.hello("ali");
+data2.hello("mero");
+
+
+// first, declare
+function sayHi() {
+  alert("Hello!");
+}
+
+
+// another way
+user = {
+  sayHi: function() {
+    alert("Hello");
+  }
+  
+};
+
+
+// method shorthand looks better, right?
+user = {
+  sayHi() { // same as "sayHi: function()"
+    alert("Hello");
+  }
+};
+
+//
+
+let user = {
+  name: "John",
+  age: 30,
+  sayHi() {
+    // "this" is the "current object"
+    alert(this.name);
+  }
+
+};
+
+user.sayHi(); // John
+
+///////////////////////
+let user = {
+  name: "John",
+  age: 30,
+
+  sayHi() {
+    alert(user.name); // "user" instead of "this"
+  }
+
+};
+user.sayHi();
+
+/////////////////////////
+let user = {
+  name: "Ilya",
+  sayHi() {
+    let th = () => alert(this.name);
+    th();
+  }
+};
+
+user.sayHi(); // Ilya
+
+
+/////////////////////
+
+// Array
+let arr = new Array();
+let arr = [];
+/////////////////
+let fruits = ["Apple", "Orange", "tomato"];
+alert( fruits[0] ); // Apple
+alert( fruits[1] ); // Orange
+alert( fruits[2] ); // tomato
+////////////////////////////////////
+// mix of values
+let arr = [ 'Apple', { name: 'joseph',age:27,
+msg:function(){
+let value=()=>{
+  let n=[]
+}
+}},
+ true,
+  function() {
+     alert('hello'); 
+    } ];
+
+alert( arr[1].name ); // joseph
+arr[3](); // hello
+
+////////////////////
+//pop remove the last elemants
+let fruits = ["Apple", "Orange", "Pear","fdg"];
+
+alert( fruits.pop() ); 
+for(let r of fruits){
+  alert(r)  
+} 
+alert( fruits ); // Apple, Orange
+////////////////////////////////////////
+// push 
+let fruits = ["Apple", "Orange"];
+
+fruits.push("Pear");
+
+alert( fruits ); // Apple, Orange, Pear
+// shift like after login and before login
+///////////////////////////////////////////
+let fruits = ["Apple", "Orange", "Pear"];
+
+alert( fruits.shift() ); // remove the first
+
+alert( fruits ); // Orange, Pear
+////////////////////////////////////////////
+let fruits = ["Orange", "Pear"];
+
+fruits.unshift('Apple');
+
+alert( fruits ); // Apple, Orange, Pear
+////////////////////////////////////////////////
+// with loop
+let arr = ["Apple", "Orange", "Pear"];
+
+for (let i = 0; i < arr.length; i++) {
+  alert( arr[i] );
+}
+
+//////// loop like python way 
+let fruits = ["Apple", "Orange", "Plum"];
+
+
+for (let f of fruits) {
+  alert( f );
+}
+
+// not recommended  for in 
+let arr = ["Apple", "Orange", "Pear"];
+
+for (let key in arr) {
+  alert( arr[key] ); // Apple, Orange, Pear
+}
+///////////
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+alert( matrix[1][1] ); // 5, the central element
+
+</script>
+*****************************************************************************
+</body>
+</html>
+****************************************************************************
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+<script>
+let fruits = ["Apple", "Orange", "Plum"];
+
+
+for (let f of fruits) {
+  alert( f );
+}
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+function stream(stream){
+  alert(stream)
+}
+let askstream = new Promise(function(result, regicted) {
+// we will used it for broadcast session
+
+let accepted=1
+if(accepted == 1){
+result("Accepted Connection"); // when successful
+}else{
+ regicted("Rejected Connection");  // when error
+}
+  
+});
+
+askstream.then(
+  function(streamuser) {stream(streamuser);},
+  function(streamerror) {stream(streamerror);}
+);
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+//Recursive thinking
+function pow(x, n) {   
+  if (n == 1) {
+    return x;
+  } else { 
+    return x * pow(x, n - 1); //8
+    
+  }
+}
+alert( pow(2,4) ); // 8
+
+
+
+
+
+// short code
+function pow(x, n) {
+  return (n == 1) ? x : (x * pow(x, n - 1));
+}
+alert( pow(2, 3) ); // 8
+/////////////
+
+//Rest parameters
+// Note The rest parameters must be at the end
+function sumAll(...a) { // args is the name for the array
+  let sum = 0;
+  for (let arg of a) sum += arg;
+  return sum;
+}
+alert( sumAll(1) ); // 1
+alert( sumAll(1, 2) ); // 3
+alert( sumAll(1, 2, 3) ); // 6
+
+
+
+let values=[50,60,7,90,30];
+let min=Math.min(...values);
+console.log("min value is:"+min);
+
+let max=Math.max(...values)
+console.log("max value is:"+max);
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+
+//There is also a special array-like object
+//named arguments that contains all arguments by their index.
+function showName() {
+  alert( arguments.length );
+  alert( arguments[0] );
+  alert( arguments[1] );
+  // it's iterable
+  // for(let arg of arguments) alert(arg);
+}
+// shows: 2, Julius, Caesar
+showName("Julius", "Caesar");
+// shows: 1, Ilya, undefined (no second argument)
+showName("Ilya");
+///////////////////////////////////////////////////////////
+//
+
+function a(){
+    function b(){
+        alert("hello from b");
+    }
+    b();
+}
+a();
+function c(){
+    let d=() => {alert("hello from d")}
+d();
+
+}
+c();
+
+
+///////////////////////////////////////////////////
+function f() {
+  let showArg = () => alert(arguments[0]);
+  showArg();
+}
+
+f(1); // 1
+//////////////////////////////////////////////////////////////////////////////
+// a built-in function Math.max that returns the greatest number from a list
+let arr = [3, 5, 1];
+
+alert( Math.max(...arr) ); // 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////
+let str = "Hello";
+alert( [...str] ); // H,e,l,l,o
+///////////// *****  another way 
+let str = "Hello";
+
+// Array.from converts an iterable into an array
+alert( Array.from(str) ); // H,e,l,l,o
+////
+////////////////////////////////////////////////// background tasks Closure
+let name = "John";  // out side function
+function sayHi() {
+  alert("Hi, " + name);
+}
+name = "Pete"; 
+sayHi(); // what will it show: "John" or "Pete"?
+/////////////////////////////////////////////////
+function makeWorker() {
+  let name = "Pete";  // inside function
+
+  return function() { alert(name);   };
+
+}
+let name = "John";  // not belone to name that inside function
+// create a function
+let work = makeWorker();
+// call it
+work(); // what will it show?
+//"Pete" (name where created) or "John" (name where called)?

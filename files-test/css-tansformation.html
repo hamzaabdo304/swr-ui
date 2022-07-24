@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ <style>
+    /*
+    transformation
+    you most add css selector for all browser
+
+  -webkit-transform: rotate(60deg); // all
+  -ms-transform: rotate(60deg); //microsoft
+  -o-transform: rotate(60deg); // opera
+  transform: rotate(60deg);    // Standard syntax
+  -moz- Firefox
+//
+translate()  will move element from  current position to any  like move from left to right
+-ms-transform: translate(100px,60px);
+transform: translate(100px,60px);
+//
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+
+  
+
+
+    img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid darkblue;
+  -ms-transform: skew(20deg,10deg); IE 9
+  transform: skew(20deg,10deg); Standard syntax
+}
+img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid darkblue;
+  -ms-transform: rotate(180deg); 
+  transform: rotate(180deg);   or rotate(-180deg)
+}
+
+increases or decreases the size by scale
+-ms-transform: scale(1,2); 
+  transform: scale(1,2); 
+  or x or y  transform: scaleX(2); transform: scaleY(2);
+*/
+
+img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid darkblue;
+   /* or onclick add this class*/
+  transform: scale(1.1); 
+}
+
+
+</style>
+</head>
+<body>
+
+  
+  <img src="images/albert.jpg" width="80px" height="80px" alt="">
+
+</body>
+</html>

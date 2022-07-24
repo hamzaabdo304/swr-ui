@@ -1,0 +1,35 @@
+
+.parent{
+    width:100%;
+    height: 550px;
+    position: relative;
+    margin: auto;
+    background-color: darkgray;
+    }
+    
+    
+    .part{
+    display: none;
+    width:100%;
+    height:100%;
+    background-color: darkgray;
+    }
+    .part img{
+        width:100%; 
+        height:100%; 
+     }
+     
+    .fadein{
+    
+        animation-name: show;
+        animation-duration: 1s;
+    }
+    
+    @-webkit-keyframes show {
+      from {opacity: .3} 
+      to {opacity: 1}
+    }
+    @keyframes show{
+        from {opacity: .3}
+        to {opacity: 1}
+    }

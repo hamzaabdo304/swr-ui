@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+<img src="images/placeholder.png" onclick="showfile()" width="300" height="300" id="img" alt="">
+<input type="file" id="file" onchange="readimage(event)" style="display: none;">
+
+<script>
+function showfile(){
+    let f=document.getElementById('file');
+    f.click();
+}
+
+function readimage(event){
+    let image=document.getElementById('img');
+    let reader=new FileReader();
+    reader.onload=function(){
+        image.src=reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

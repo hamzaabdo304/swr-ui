@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+/*
+delay to wait some of time and then execute 
+transition-delay: second number 1s or 2s etc
+transition-duration: second number 2s 5s 6s etc
+transition-property : width  height 
+transition-timing-function:linear, ease,
+ ease-in
+, ease-out
+, ease-in-out
+all in single line : 
+transition:height 3s ease-in 2s;
+*/
+.header_part {
+  width: 100px;
+  height: 60px;
+  background:darkblue;
+  transition: width 5s, height 5s;
+} 
+
+.header_part:hover{ /* or onclick by ClassList.add("class name") js*/
+  width: 200px;
+  height: 120px;
+}
+
+.move{
+  width:800px;
+  height:100px;
+}
+</style>
+
+<script>
+  function move(){
+let header=document.getElementById('header');
+header.classList.add('move');
+  }
+</script>
+
+
+</head>
+<body>
+    
+<div class="header_part">
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gallery.css">
+   
+</head> 
+<body>
+    
+ 
+<div class="parent">
+
+    <div class="part fadein">
+        <img src="images/pexels-photo-5410069.jpeg"  alt="">
+    </div>
+    <div class="part fadein">
+        <img src="images/albert_einstein.jpeg"  alt="">
+    </div>
+    <div class="part fadein">
+        <img src="images/pexels-photo-5410069.jpeg"  alt="">
+    </div>
+    <div class="part fadein">
+        <img src="images/albert_einstein.jpeg"  alt="">
+    </div>
+
+
+
+</div>
+
+
+<script>
+
+    var index=0;  // 3
+   play_gallery();
+    
+    function play_gallery(){
+        let i;// first hide all 
+        let part=document.getElementsByClassName("part");
+        for(i=0;i < part.length;i++){
+            part[i].style.display = "none";  
+        }
+        //end of hide all 
+        index++; // global variable every time will increase by one
+        if(index > part.length)
+        {
+            index=1
+        }
+        part[index-1].style.display = "block";  
+       setTimeout(play_gallery,3000)
+    }
+    
+    
+        </script>
+    
+
+
+</body>
+</html>
